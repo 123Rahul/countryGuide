@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CountryGuide</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="capital">Capital</string>
+    <string name="gini">Gini</string>
+    <string name="population">Population</string>
+    <string name="region">Region</string>
+    <string name="area">Area</string>
+    <string name="time_zone">Time zone</string>
+    <string name="calling_code">Calling Code</string>
+    <string name="demonym">Demonym</string>
+    <string name="language">Language</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
