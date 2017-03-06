@@ -65,7 +65,10 @@ public class InfoActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return DetailFragment.newInstance();
+            if (position == 1)
+                return LocationFragment.newInstance(position + 1);
+            else
+                return DetailFragment.newInstance();
         }
 
         @Override

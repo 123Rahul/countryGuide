@@ -73,13 +73,15 @@ public class FileUtil {
                 domain = object.getJSONArray("topLevelDomain").getString(0);
                 if (object.getJSONArray("latlng").length() > 0) {
                     lat = object.getJSONArray("latlng").getString(0);
-                    lng = object.getJSONArray("latlng").getString(0);
+                    lng = object.getJSONArray("latlng").getString(1);
                 } else {
-                    lat = "-";
-                    lng = "-";
+                    lat = "0";
+                    lng = "0";
                 }
                 area = object.getString("area");
                 gini = object.getString("gini");
+                if (gini.equals("null"))
+                    gini = "-";
                 flag = alpha3Code.toLowerCase();
                 country = new Country(name, capital, domain, region, alpha2Code, alpha3Code, timezone, nativeName,
                         currency, language, demonym, callingCode, population, lat, lng, area, gini, flag);
